@@ -1,0 +1,39 @@
+DEBUG 2022-01-16 14:13:30,186 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Bookings]
+DEBUG 2022-01-16 14:13:30,392 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Buildings]
+DEBUG 2022-01-16 14:13:30,576 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Companies]
+DEBUG 2022-01-16 14:13:30,761 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Configurations]
+DEBUG 2022-01-16 14:13:30,946 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [DataProtectionKeys]
+DEBUG 2022-01-16 14:13:31,140 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Emails]
+DEBUG 2022-01-16 14:13:31,322 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Floors]
+DEBUG 2022-01-16 14:13:31,515 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [JobLogs]
+DEBUG 2022-01-16 14:13:31,713 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Notifications]
+DEBUG 2022-01-16 14:13:31,907 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Offices]
+DEBUG 2022-01-16 14:13:32,089 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Onboardings]
+DEBUG 2022-01-16 14:13:32,273 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [WorkingPolicies]
+DEBUG 2022-01-16 14:13:32,456 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SQLSessions]
+DEBUG 2022-01-16 14:13:32,637 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Users]
+DEBUG 2022-01-16 14:13:32,824 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [UsersTeamsLink]
+DEBUG 2022-01-16 14:13:33,013 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Selections]
+DEBUG 2022-01-16 14:13:33,199 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SlackTeams]
+DEBUG 2022-01-16 14:13:33,386 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SlackMembers]
+DEBUG 2022-01-16 14:13:33,567 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Events]
+DEBUG 2022-01-16 14:13:33,754 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SeatArchitectures]
+DEBUG 2022-01-16 14:13:33,950 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Seats]
+DEBUG 2022-01-16 14:13:34,143 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Locations]
+DEBUG 2022-01-16 14:13:34,324 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Meetings]
+DEBUG 2022-01-16 14:13:34,509 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [MeetingUsers]
+DEBUG 2022-01-16 14:13:34,690 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Teams]
+DEBUG 2022-01-16 14:13:34,690 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:869) - finished parsing all tables in SQL Server schema
+DEBUG 2022-01-16 14:13:38,279 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:487) - Creating SQLite database...
+DEBUG 2022-01-16 14:13:38,280 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:492) - SQLite file was created successfully at [C:\Users\Benjamin\Documents\test.db]
+ERROR 2022-01-16 14:13:38,343 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:82) - Failed to convert SQL Server database to SQLite database
+System.BadImageFormatException: An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)
+   at System.Data.SQLite.UnsafeNativeMethods.sqlite3_config_none(SQLiteConfigOpsEnum op)
+   at System.Data.SQLite.SQLite3.StaticIsInitialized()
+   at System.Data.SQLite.SQLiteLog.PrivateInitialize(String className)
+   at System.Data.SQLite.SQLiteLog.Initialize(String className)
+   at System.Data.SQLite.SQLiteConnection..ctor(String connectionString, Boolean parseViaFramework)
+   at System.Data.SQLite.SQLiteConnection..ctor(String connectionString)
+   at DbAccess.SqlServerToSQLite.CreateSQLiteDatabase(String sqlitePath, DatabaseSchema schema, String password, SqlConversionHandler handler, FailedViewDefinitionHandler viewFailureHandler) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 496
+   at DbAccess.SqlServerToSQLite.ConvertSqlServerDatabaseToSQLiteFile(String sqlConnString, String sqlitePath, String password, SqlConversionHandler handler, SqlTableSelectionHandler selectionHandler, FailedViewDefinitionHandler viewFailureHandler, Boolean createTriggers) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 116
+   at DbAccess.SqlServerToSQLite.<>c__DisplayClass5_0.<ConvertSqlServerToSQLiteDatabase>b__0(Object state) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 76

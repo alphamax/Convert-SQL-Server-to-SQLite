@@ -1,0 +1,62 @@
+ERROR 2022-01-16 14:23:57,364 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:82) - Failed to convert SQL Server database to SQLite database
+System.IO.IOException: The process cannot access the file 'C:\Users\Benjamin\Documents\test.db' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at DbAccess.SqlServerToSQLite.ConvertSqlServerDatabaseToSQLiteFile(String sqlConnString, String sqlitePath, String password, SqlConversionHandler handler, SqlTableSelectionHandler selectionHandler, FailedViewDefinitionHandler viewFailureHandler, Boolean createTriggers) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 110
+   at DbAccess.SqlServerToSQLite.<>c__DisplayClass5_0.<ConvertSqlServerToSQLiteDatabase>b__0(Object state) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 76
+DEBUG 2022-01-16 14:24:04,555 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Bookings]
+DEBUG 2022-01-16 14:24:04,859 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Buildings]
+DEBUG 2022-01-16 14:24:05,153 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Companies]
+DEBUG 2022-01-16 14:24:05,441 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Configurations]
+DEBUG 2022-01-16 14:24:05,726 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [DataProtectionKeys]
+DEBUG 2022-01-16 14:24:06,025 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Emails]
+DEBUG 2022-01-16 14:24:06,340 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Floors]
+DEBUG 2022-01-16 14:24:06,671 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [JobLogs]
+DEBUG 2022-01-16 14:24:06,955 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Notifications]
+DEBUG 2022-01-16 14:24:07,263 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Offices]
+DEBUG 2022-01-16 14:24:07,523 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Onboardings]
+DEBUG 2022-01-16 14:24:07,701 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [WorkingPolicies]
+DEBUG 2022-01-16 14:24:07,882 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SQLSessions]
+DEBUG 2022-01-16 14:24:08,066 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Users]
+DEBUG 2022-01-16 14:24:08,254 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [UsersTeamsLink]
+DEBUG 2022-01-16 14:24:08,436 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Selections]
+DEBUG 2022-01-16 14:24:08,614 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SlackTeams]
+DEBUG 2022-01-16 14:24:08,799 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SlackMembers]
+DEBUG 2022-01-16 14:24:08,983 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Events]
+DEBUG 2022-01-16 14:24:09,182 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [SeatArchitectures]
+DEBUG 2022-01-16 14:24:09,376 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Seats]
+DEBUG 2022-01-16 14:24:09,560 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Locations]
+DEBUG 2022-01-16 14:24:09,747 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Meetings]
+DEBUG 2022-01-16 14:24:09,933 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [MeetingUsers]
+DEBUG 2022-01-16 14:24:10,115 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:865) - parsed table schema for [Teams]
+DEBUG 2022-01-16 14:24:10,116 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:869) - finished parsing all tables in SQL Server schema
+DEBUG 2022-01-16 14:24:13,471 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:487) - Creating SQLite database...
+DEBUG 2022-01-16 14:24:13,471 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:492) - SQLite file was created successfully at [C:\Users\Benjamin\Documents\test.db]
+DEBUG 2022-01-16 14:24:13,547 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:751) - DEFAULT VALUE BEFORE [(newid)] AFTER [(lower(hex(randomblob(4))) || '-' || lower(hex(randomblob(2))) || '-4' || substr(lower(hex(randomblob(2))),2) || '-' || substr('89ab',abs(random()) % 4 + 1, 1) || substr(lower(hex(randomblob(2))),2) || '-' || lower(hex(randomblob(6))))]
+DEBUG 2022-01-16 14:24:13,548 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:751) - DEFAULT VALUE BEFORE [] AFTER []
+DEBUG 2022-01-16 14:24:13,548 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:751) - DEFAULT VALUE BEFORE [(getdate)] AFTER [getdate]
+DEBUG 2022-01-16 14:24:13,548 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:754) - converted SQL Server GETDATE() to CURRENT_TIMESTAMP for column [CreationDate]
+ INFO 2022-01-16 14:24:13,549 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:597) - 
+
+CREATE TABLE [Companies] (
+	"Id"		char(36) NOT NULL DEFAULT (lower(hex(randomblob(4))) || '-' || lower(hex(randomblob(2))) || '-4' || substr(lower(hex(randomblob(2))),2) || '-' || substr('89ab',abs(random()) % 4 + 1, 1) || substr(lower(hex(randomblob(2))),2) || '-' || lower(hex(randomblob(6)))),
+	"Name"		nvarchar COLLATE NOCASE,
+	"CreationDate"		datetime NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+    PRIMARY KEY ([Id])
+
+);
+
+
+
+DEBUG 2022-01-16 14:24:13,564 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:517) - added schema for SQLite table [Companies]
+DEBUG 2022-01-16 14:24:13,567 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:542) - finished adding all table/view schemas for SQLite database
+DEBUG 2022-01-16 14:24:13,568 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:141) - preparing to insert tables ...
+DEBUG 2022-01-16 14:25:53,986 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:194) - finished inserting all rows for table [Companies]
+ERROR 2022-01-16 14:26:23,120 (G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:82) - Failed to convert SQL Server database to SQLite database
+System.IO.IOException: The process cannot access the file 'C:\Users\Benjamin\Documents\test.db' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at DbAccess.SqlServerToSQLite.ConvertSqlServerDatabaseToSQLiteFile(String sqlConnString, String sqlitePath, String password, SqlConversionHandler handler, SqlTableSelectionHandler selectionHandler, FailedViewDefinitionHandler viewFailureHandler, Boolean createTriggers) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 110
+   at DbAccess.SqlServerToSQLite.<>c__DisplayClass5_0.<ConvertSqlServerToSQLiteDatabase>b__0(Object state) in G:\Projects\Personnal\Convert-SQL-Server-to-SQLite\DbAccess\SqlServerToSQLite.cs:line 76

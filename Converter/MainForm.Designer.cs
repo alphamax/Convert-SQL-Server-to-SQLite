@@ -67,6 +67,7 @@ namespace Converter
             this.txtSqlAddress.Name = "txtSqlAddress";
             this.txtSqlAddress.Size = new System.Drawing.Size(313, 20);
             this.txtSqlAddress.TabIndex = 1;
+            this.txtSqlAddress.Text = "localhost";
             this.txtSqlAddress.TextChanged += new System.EventHandler(this.txtSqlAddress_TextChanged);
             // 
             // label2
@@ -84,6 +85,7 @@ namespace Converter
             this.txtSQLitePath.Name = "txtSQLitePath";
             this.txtSQLitePath.Size = new System.Drawing.Size(313, 20);
             this.txtSQLitePath.TabIndex = 11;
+            this.txtSQLitePath.Text = "C:\\Users\\Benjamin\\Documents\\test.db";
             this.txtSQLitePath.TextChanged += new System.EventHandler(this.txtSQLitePath_TextChanged);
             // 
             // btnBrowseSQLitePath
@@ -292,8 +294,8 @@ namespace Converter
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "SQL Server To SQLite DB Converter";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
