@@ -1,5 +1,7 @@
 # Convert SQL Server DB to SQLite DB #
 
+Fork: Quick and dirty fix to handle Guid unique identifier as auto generated.
+
 Liron Levi made a great converter over on CodeProject at [http://www.codeproject.com/KB/database/convsqlservertosqlite.aspx](http://www.codeproject.com/KB/database/convsqlservertosqlite.aspx)
 
 This project was placed in the public domain, so I've forked it on GitHub and made the following changes to the 1.16 version:
