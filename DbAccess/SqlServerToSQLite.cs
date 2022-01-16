@@ -646,7 +646,7 @@ namespace DbAccess
                 for (int i = 0; i < ts.ForeignKeys.Count; i++)
                 {
                     ForeignKeySchema foreignKey = ts.ForeignKeys[i];
-                    string stmt = string.Format("    FOREIGN KEY ([{0}])\n        REFERENCES [{1}]([{2}]) DEFERRABLE INITIALLY DEFERRED",
+                    string stmt = string.Format("    FOREIGN KEY ([{0}])\n        REFERENCES [{1}]([{2}])",
                                 foreignKey.ColumnName, foreignKey.ForeignTableName, foreignKey.ForeignColumnName);
 
                     sb.Append(stmt);
@@ -728,7 +728,7 @@ namespace DbAccess
                 if (col.ColumnType == "int")
                     sb.Append("integer");
                 else if (col.ColumnType == "guid")
-                    sb.Append("char(36)");
+                    sb.Append("text");
                 else
                 {
                     sb.Append(col.ColumnType);

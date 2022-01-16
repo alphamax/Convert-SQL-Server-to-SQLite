@@ -1,0 +1,12 @@
+
+Converter/bin/
+
+Converter/obj/
+
+DbAccess/bin/
+
+DbAccess/obj/
+
+.vs/SqlConverter/project-colors.json
+
+.vs/SqlConverter/v17/
